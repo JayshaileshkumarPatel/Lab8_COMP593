@@ -9,16 +9,17 @@ def main():
     root.title("Pokemon Information")
     root.iconbitmap("Poke-Ball.ico")
     #root.geometry('400x400')
+    root.resizable(False, False)
     
     
     frame_top = ttk.Frame(root)
     frame_top.grid(row=0, column=0, columnspan=2, padx=10, pady=10)
 
     frame_info = ttk.LabelFrame(root, text='Info')
-    frame_info.grid(row=1, column=0, padx=10, pady=10)
+    frame_info.grid(row=1, column=0, padx=10, pady=10, sticky=N)
 
     frame_stats = ttk.LabelFrame(root, text='stats')
-    frame_stats.grid(row=1, column=1, padx=10, pady=10)
+    frame_stats.grid(row=1, column=1, padx=10, pady=10, sticky=N)
 
     lbl_name = ttk.Label(frame_top, text='Pokemon Name:')
     lbl_name.grid(row=0, column=0, padx=10, pady=10)
