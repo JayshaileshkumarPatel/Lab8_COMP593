@@ -64,7 +64,7 @@ def main():
     lbl_type = ttk.Label(frame_info, text='Type:')
     lbl_type.grid(row=300, column=100, padx=(10,0), pady=10, sticky=E)
 
-    lbl_type_val = ttk.Label(frame_info)
+    lbl_type_val = ttk.Label(frame_info, width=20)
     lbl_type_val.grid(row=300, column=200, padx=10, pady=10, sticky=W)
 
 
